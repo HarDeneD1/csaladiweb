@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/814e5d2398.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/magicscroll.css">
+    <script src="/magicscroll.js"></script>
+    <title>Szalai Csemetekert-Növényeink</title>
+</head>
+
+<body>
+    <header>
+        <div class="grid">
+            <div class="logo">
+                <a href="/index.html"><img src="/logo.png" alt="Szalai kert"></a>
+            </div>
+
+            <div class="menu">
+
+                <nav>
+
+                    <ul>
+                            <li><h1><a href="/index.html">Üdvözöljük</a></h1></li>
+                            <li><h1><a href="/aloldalak/novenyek.html">Növények</a></h1></li>
+                            <li><h1><a href="/aloldalak/kapcsolat.html">Kapcsolat</a></h1></li>
+                            <li><h1><a href="/aloldalak//rendeles.html">Rendelés</a></h1></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div id="container">
+            <div class="tablazat">
+                <table>
+                    <caption>
+                        <details>
+                            <summary>NÖVÉNYEK</summary>
+                            <p> Az aktuális növényeink
+                            </p>
+                        </details>
+                    </caption>
+                    <tr>
+                        <th>FAJTA</th>
+                        <th>LATIN NÉV</th>
+                        <th>KÉP</th>
+                    </tr>
+                    <tr class="r1">
+                        <td>Vörös Tölgy</td>
+                        <td><a href="https://hu.wikipedia.org/wiki/Vörös_tölgy" target="_blank"> QUERCUS RUBRA</a></td>
+                        <td><a href="/voros-tolgy.jpg"><img src="/voros-tolgy.jpg" alt="tölgy"></a></td>
+                    </tr>
+                    <tr class="r2">
+                        <td>Kocsányos tölgy</td>
+                        <td><a href="https://hu.wikipedia.org/wiki/Kocsányos_tölgy" target="_blank">QUERCUS ROBUR</a></td>
+                        <td><a href="/kocsanyos.jpeg"><img src="/kocsanyos.jpeg" alt="kocsányos tölgy"></a></td>
+                    </tr>
+                    <tr class="r1">
+                        <td>Cser</td>
+                        <td><a href="https://en.wikipedia.org/wiki/Quercus_cerris" target="_blank">QUERCUS CERRIS</a></td>
+                        <td><a href="/cser.jpeg"><img src="/cser.jpeg" alt="cser"></a></td>
+                    </tr>
+                    <tr class="r2">
+                        <td>Bükk</td>
+                        <td><a href="https://hu.wikipedia.org/wiki/Európai_bükk" target="_blank">FAGUS SYLVATICA</a></td>
+                        <td><a href="/bukk.jpeg"><img src="/bukk.jpeg" alt="bükk"></a></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="galleria">
+                <h3>GALLÉRIA </h3>
+
+            </div>
+
+            <div class="MagicScroll" data-options="mode: cover-flow; height: 275px;">
+                <img src="/bukk.jpeg" alt="Kép 1">
+                <img src="/cser.jpeg" alt="Kép 2">
+                <img src="/Kep1.jpg" alt="Kép 3">
+                <img src="/Kep2.png" alt="Kép 4">
+                <img src="/kocsanyos.jpeg" alt="Kép 5">
+                <img src="/logo.png" alt="Kép 6">
+                <img src="/Szoveg.png" alt="Kép 2">
+                <img src="/voros-tolgy.jpg" alt="Kép 3">
+                <img src="/Kep1.jpg" alt="Kép 4">
+            </div>
+
+            <div class="video">
+                <h3>VIDEÓK</h3>
+                <video controls poster="/borito.png">
+                    <source src="/video/video.mp4">
+                </video>
+            </div>
+        </div>
+
+
+    </main>
+    <script>
+        var images = document.getElementById("gallery").getElementsByTagName("img");
+        var index = 0;
+
+        function nextImag1e() {
+            images[index].style.display = "none";
+            index = (index + 1) % images.length;
+            images[index].style.display = "block";
+        }
+
+        setInterval(nextImage, 1500);
+    </script>
+
+</body>
+
+
+</html>

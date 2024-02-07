@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/814e5d2398.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+    <title>Szalai Csemetekert-Rendelés</title>
+</head>
+
+<body>
+    <header>
+        <div class="grid">
+            <div class="logo">
+                <a href="/index.html"><img src="/logo.png" alt="Szalai kert"></a>
+            </div>
+
+            <div class="menu">
+
+                <nav>
+
+                    <ul>
+                        <li>
+                            <h1><a href="/index.html">Üdvözöljük</a></h1>
+                        </li>
+                        <li>
+                            <h1><a href="/aloldalak/novenyek.html">Növények</a></h1>
+                        </li>
+                        <li>
+                            <h1><a href="/aloldalak/kapcsolat.html">Kapcsolat</a></h1>
+                        </li>
+                        <li>
+                            <h1><a href="/aloldalak//rendeles.html">Rendelés</a></h1>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="rendelcim">
+                <h2>Rendelés</h2>
+            </div>
+            <div class="szemelyescim">
+                <h2>Személyes Átvétel</h2>
+            </div>
+            <div class="urlap">
+
+                <form>
+                    <h5>
+                        <label for="nev">
+                            Név:
+                        </label>
+                        <input type="text" id="nev" name="nev" placeholder="Teljes név" maxlength="20"><br>
+                    </h5>
+
+                    <h5>
+                        <label for="cim">Cím:</label>
+                        <input type="text" id="cim" name="cim" placeholder="Szállítási cím" maxlength="30">
+                        <br>
+                    </h5>
+
+                    <h5>
+                        <label for="meg">Megjegyzés(max 200 karakter):</label><br>
+                        <textarea name="meg" id="meg" cols="30" rows="10" placeholder="Megjegyzés"
+                            maxlength="200"></textarea>
+                        <br>
+                    </h5>
+
+                    <h5>
+                        <label for="tel">Telefon:</label>
+                        <input id="tel" name="tel" placeholder="+36 xx xxx xxxx" type="tel" maxlength="12">
+                        <br>
+
+                    </h5>
+                    <h5>
+                        <label for="tipus">Csemete típus:</label>
+                        <select id="tipus" name="tipus">
+                            <option value="" selected disabled hidden>Válasszon</option>
+                            <option value="bukk">Bükk</option>
+                            <option value="cser">Cser</option>
+                            <option value="vtolgy">Vörös tölgy</option>
+                            <option value="ktolgy">Kocsányos tölgy</option>
+                        </select>
+                        <br>
+                    </h5>
+
+                    <h4>Válasszon fizetési módot:</h4>
+
+                    <div class="radio">
+
+                        <input value="0" type="radio" id="radio-0" name="radio">
+                        <label for="radio-0"> Utánvét</label>
+                        <br>
+                        <input value="1" type="radio" id="radio-1" name="radio">
+                        <label for="radio-1"> Előreutalás</label>
+                        <br>
+
+                    </div>
+
+                    <div class="check">
+                        <h5>
+                            <input type="checkbox" id="vehicle1" name="vehicle1">
+                            <label for="vehicle1">Elfogadom a megrendeléssel járó kötelezettségeket!</label><br>
+                        </h5>
+                    </div>
+
+                    <div class="gomb">
+                        <input type="button" class="btn" value=" Rendelés " onclick="sendForm()">
+                    </div>
+                    <br>
+                    <div class="rgomb">
+
+                        <input type="reset" class="btn" value=" Adatok törlése ">
+                    </div>
+                </form>
+
+            </div>
+            
+            <div class="googleMap">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.523408566346!2d17.175085776583206!3d47.47971607117853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476bfc41df85a879%3A0x520ff785be96216e!2sP%C3%A1li%2C%20Kossuth%20u.%20134%2C%209345!5e0!3m2!1shu!2shu!4v1682678666982!5m2!1shu!2shu"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="szemelyescim2">
+                <h2>Személyes Átvétel</h2>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        function sendForm() {
+            var name = document.getElementById("nev").value;
+            var cim = document.getElementById("cim").value;
+            var message = document.getElementById("meg").value;
+            var tel = document.getElementById("tel").value;
+            var tipus = document.getElementById("tipus").value;
+            var radio0 = document.getElementById("radio-0");
+            var radio1 = document.getElementById("radio-1");
+            var utan = radio0.checked ? radio0.value : radio1.value;
+
+
+
+            var body = "Név: " + name + "\ncim: " + cim + "\nMegjegyzés: " + message + "\nTelefon: " + tel + "\nTípus: " + tipus + "\n Fizetés: " + utan;
+            window.location.href = "mailto:notaros.balint@gmail.com?subject=Üzenet az űrlapról&body=" + encodeURIComponent(body);
+
+            setTimeout(function () {
+
+                window.location.href = "/aloldalak/sikeres.html";
+            }, 3000);
+        }
+    </script>
+</body>
+
+
+
+</html>

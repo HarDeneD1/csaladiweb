@@ -1,0 +1,548 @@
+body {
+    background: #e4f8da;
+    text-align: justify;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+
+body a {
+    text-decoration: underline;
+}
+
+header img {
+    width: 150%;
+}
+
+.udv h2 {
+    padding: 0%;
+    font-size: 350%;
+    font-family: 'Russo One', sans-serif;
+}
+
+header .grid {
+    align-items: center;
+    padding: 1%;
+}
+
+header a {
+    font-family: 'Russo One', sans-serif;
+    color: #e4f8da;
+    cursor: pointer;
+}
+
+header {
+    background: #00000092;
+    font-size: 200%;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+}
+
+
+.menu {
+    text-align: center;
+    grid-column: span 10;
+    justify-self: end;
+}
+
+.menu nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+}
+
+.menu h1 {
+    padding-left: 10px;
+    font-size: 100%;
+    font-weight: bold;
+    font-family: 'Russo One', sans-serif;
+}
+
+.fooldal ul {
+    text-align: left;
+}
+
+
+h1 {
+    font-size: 350%;
+    font-family: 'Russo One', sans-serif;
+}
+
+h2 {
+    padding: 10%;
+    font-size: 300%;
+    font-family: 'Russo One', sans-serif;
+}
+
+h3 {
+
+    font-size: 200%;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    padding: 35px;
+}
+
+h4 {
+    font-size: 150%;
+    font-family: 'Russo One', sans-serif;
+}
+
+a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    align-items: center;
+    color: black;
+}
+
+a{
+    cursor: pointer;
+    
+}
+
+.almenu a {
+    color: #e4f8da;
+
+}
+
+.menu a:hover {
+    color: black;
+}
+
+.logo img:hover{
+    border: 5px solid black;
+}
+
+.box a:hover{
+    color: black;
+}
+
+
+
+.logo {
+    grid-column: span 2;
+    width: auto;
+    justify-self: end;
+}
+
+.grid {
+    display: grid;
+    margin: 0 auto;
+    width: 90%;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 5px;
+    grid-template-rows: auto;
+}
+
+.box {
+    background-color: #00000092;
+    font-size: 20px;
+    align-items: center;
+    text-align: justify;
+    align-items: center;
+}
+
+
+
+.almenu .udv {
+    align-items: center;
+    grid-column: span 12;
+}
+
+.almenu .box {
+    grid-column: span 12;
+}
+
+.fooldal .rolunk {
+    grid-column: span 12;
+}
+
+.fooldal .csemetekertcim {
+    grid-column: span 12;
+}
+
+.fooldal .bemutatSz {
+    grid-column: span 8;
+}
+
+.fooldal .bemutatK {
+    grid-column: span 3;
+}
+
+.fooldal img {
+    width: 400px;
+
+}
+
+.fooldal .bemutatSz2 {
+    grid-column: span 12;
+}
+
+.fooldal .adminisztracio {
+    grid-column: span 12;
+}
+
+.fooldal .beszerzes {
+    grid-column: span 12;
+}
+
+.fooldal .traktor {
+    justify-self: center;
+    align-items: center;
+    grid-column: span 12;
+}
+
+.fooldal .traktor img {
+    width: 100%;
+    border: 1px solid;
+}
+
+.tablazat {
+    grid-column: span 12;
+}
+
+.tablazat .r1 {
+    background-color: #eaf1dd;
+}
+
+.tablazat .r2 {
+    background-color: #ffffff;
+}
+
+
+.tablazat img {
+    color: black;
+    border: 3px solid;
+    width: 200px;
+}
+
+.tablazat th {
+    background-color: #9bbb59;
+    color: #ffffff;
+    font-family: 'Russo One', sans-serif;
+}
+
+.container {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+}
+
+table {
+    overflow-x: auto;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    color: #616161;
+    font-family: 'Russo One', sans-serif;
+    vertical-align: middle;
+}
+
+.galleria {
+    align-items: center;
+    grid-column: span 12;
+}
+
+
+.gallery {
+    background-image: url(fa.jpeg);
+    display: flex;
+    width: 100%;
+    height: 120%;
+    grid-column: span 12;
+}
+
+
+title
+
+.MagicScroll img {
+    max-width: 100%;
+    height: 230PX;
+    margin-right: 100px;
+    padding: 2%;
+}
+
+
+
+.video video {
+    grid-column: span 12;
+    width: 100%;
+}
+
+
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 1.4fr 0.6fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    justify-items: stretch;
+    grid-template-areas:
+        "cim cim"
+        "adatk adatsz"
+        "adatk adatsz"
+        "szoveg szoveg";
+}
+
+
+@media (max-width: 768px) {
+
+    .grid{
+        display: block;
+    }
+    .grid2 {
+        display: block;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-items: center;
+        text-align: center;
+        grid-template-areas:
+            "cim"
+            "urlap"
+            "cim2"
+            "googleMap";
+    }
+
+    .rendelcim {
+        grid-area: cim;
+    }
+.szemelyescim2{
+    grid-area:  cim2;
+}
+    .urlap {
+        grid-area: urlap;
+    }
+
+    .googleMap {
+        grid-area: googleMap;
+    }
+
+    .szemelyescim {
+        display: none;
+    }
+
+
+
+
+    header img {
+        display: none;
+    }
+
+    .menu {
+        text-align: left;
+        justify-self: end
+    }
+
+}
+
+.grid2 .cim {
+    justify-self: left;
+    grid-area: cim;
+}
+
+.grid2 .adatk {
+    justify-self: center;
+    grid-area: adatk;
+}
+
+.adatk img {
+    width: 80%;
+    border: 2px solid;
+
+}
+
+.grid2 .adatsz {
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: adatsz;
+    font-size: 200%;
+}
+
+.grid2 .szoveg {
+    align-self: center;
+    grid-area: szoveg;
+    text-align: center;
+    font-size: 130%;
+
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.googleMap {
+    align-items: center;
+    justify-content: center;
+}
+
+.googleMap iframe {
+    border: 10px solid;
+    width: 100%;
+    height: 70%;
+}
+
+
+.urlap h5 {
+    font-size: 120%;
+    font-family: 'Russo One', sans-serif;
+}
+
+
+
+.check {
+    text-align: left;
+    justify-self: left;
+    align-items: start;
+
+}
+
+
+input[type=radio] {
+    border: 0px;
+    width: 10%;
+    align-items: center;
+}
+
+.radio {
+    font-size: 150%;
+    vertical-align: middle;
+
+}
+
+.container h2 {
+    padding: 0%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+
+.btn {
+
+    width: fit-content;
+    font-size: 250%;
+    font-family: 'Signika Negative', sans-serif;
+    background-color: #b1dd8c;
+    border: 2px solid;
+
+}
+
+.btn:hover {
+    color: wheat;
+    background-color: #57b45b;
+    cursor: pointer;
+    border: 3px solid;
+    border-color: #616161;
+}
+
+button {
+    width: 100%;
+}
+
+.gomb {
+    align-items: center;
+    vertical-align: middle;
+}
+
+.sikergrid h3 {
+    text-align: left;
+    font-size: 150%;
+}
+
+caption {
+    padding: 2%;
+}
+
+.sikergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.1fr 0.2fr 1.3fr;
+    grid-auto-columns: 1fr 1fr 1fr;
+    gap: 10px 0px;
+    grid-auto-flow: row;
+    justify-items: left;
+    align-items: stretch;
+    grid-template-areas:
+        "cim1 cim1"
+        "cim2 cim2"
+        "gomb gomb";
+}
+
+
+.cim1 {
+    grid-area: cim1;
+}
+
+.cim2 {
+    grid-area: cim2;
+}
+
+.gomb {
+    grid-area: gomb;
+}
+
+.grid a {
+    text-decoration: none;
+    color: #e4f8da;
+
+}
+
+.tablazat a:link {
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+.tablazat a:visited {
+    color: #6c757d;
+    font-weight: normal;
+}
+
+details {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 130%;
+    padding: 5%;
+}
+
+.sikergrid h2 {
+    text-align: left;
+}
+
+.szemelyescim2 {
+    display: none;
+    
+}
+
+
+@media (max-width: 768px) {
+
+
+.szemelyescim2{
+    display: block;
+}
+
+
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
